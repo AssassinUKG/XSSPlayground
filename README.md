@@ -18,6 +18,7 @@ Host
 
 
 3. Run the php local server
+
 *Have php installed so you can use php in terminal, then start a local server*
 
 ```
