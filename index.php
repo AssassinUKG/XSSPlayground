@@ -13,8 +13,8 @@
 		}
 
 		textarea {
-			width: 300px;
-			height: 50px;
+			width: 350px;
+			height: 75px;
 			padding: 10px;
 			margin: 5px;
 		}
@@ -81,7 +81,7 @@
 	<table id="exploitTable">
 		<tr>
 			<th>XSS One (basic)</th>
-			<th>XSS Two (urlencode)</th>
+			<th>XSS Two (Tag encode)</th>
 		</tr>
 		<tr>
 			<!-- ##############################################################################  -->
@@ -169,13 +169,13 @@
 					function encode() {
 						var obj = document.getElementById('urlencode');
 						var unencoded = obj.value;
-						obj.value = encodeURIComponent(unencoded).replace(/'/g, "%27").replace(/"/g, "%22");
+						obj.value = encodeURIComponent(unencoded).replace("/'/g", "%27").replace('/"/g', "%22");
 					}
 
 					function decode() {
 						var obj = document.getElementById('urlencode');
 						var encoded = obj.value;
-						obj.value = decodeURIComponent(encoded.replace(/\+/g, " "));
+						obj.value = decodeURIComponent(encoded.replace("/\+/g", " "));
 					}
 				</script>
 				<form>
