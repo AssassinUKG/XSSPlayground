@@ -99,8 +99,9 @@
 					<!-- eg payloads: -->
 					<!-- "><script>alert(1)</script> -->
 					<!-- "><img/src=x onmouseenter="javascript:alert(1)"/> -->
-					<!-- XSS HERE -->
-					<?php echo "Result: " . $_GET['test1']; ?>
+					<!-- XSS HERE --><?php
+					$res = $_GET['test1'];
+					echo "Result: " . $res; ?>
 					<!-- XSS END -->
 				</div>
 
@@ -179,7 +180,7 @@
 					}
 				</script>
 				<form>
-					<textarea id="urlencode"> <?= htmlspecialchars($_GET['code'], ENT_QUOTES, 'UTF-8') ?></textarea>
+					<textarea id="urlencode"> <?= htmlspecialchars(isset($_GET['code']), ENT_QUOTES, 'UTF-8') ?></textarea>
 					<br /><input type="button" onclick="encode()" value="Encode"><input type="button" onclick="decode()" value="Decode">
 				</form>
 				<div>
@@ -227,7 +228,7 @@
 					}
 				</script>
 				<form>
-					<textarea id="hexencode"> <?= htmlspecialchars($_GET['code'], ENT_QUOTES, 'UTF-8') ?></textarea>
+					<textarea id="hexencode"> <?= htmlspecialchars(isset($_GET['code']), ENT_QUOTES, 'UTF-8') ?></textarea>
 					<br /><input type="button" onclick="encodehex()" value="Encode"><input type="button" onclick="decodehex()" value="Decode">
 				</form>
 
