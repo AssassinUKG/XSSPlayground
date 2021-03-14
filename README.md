@@ -14,8 +14,7 @@ Host
 1. Download the index.php file.
 2. Add to your /var/www/html folder
 
-*Tip: Make a new folder called 'xss' eg: /var/www/html/xss
-
+*Tip: Make a new folder called 'xss' eg: /var/www/html/xss*
 
 3. Run the php local server
 
