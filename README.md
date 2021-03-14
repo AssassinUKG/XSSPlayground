@@ -1,7 +1,8 @@
 # XSSPlayground
 A simple place to learn XSS
 
-
+## Screenshots
+![](/assets/xss.png)
 
 ## Setup
 Host
