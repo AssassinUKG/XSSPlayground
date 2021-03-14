@@ -1,10 +1,14 @@
 # XSSPlayground
-A simple place to learn XSS
+
+A simple place to learn XSS.
+Made for myself to learn and to help others (please do use!)
 
 ## Screenshots
+
 ![](/assets/xss.png)
 
 ## Setup
+
 Host
 Download the inxed.php file and add to your /var/www/html folder,
 *Tip: Make a new folder called 'xss' eg: /var/www/html/xss
