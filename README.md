@@ -1,9 +1,12 @@
 # XSSPlayground
 A simple place to learn XSS
 
+
+
 ## Setup
 Host
-Download the inxed.php file and add to your /var/www/html folder (make a new folder called 'xss' eg: /var/www/html/xss)
+Download the inxed.php file and add to your /var/www/html folder,
+*Tip: Make a new folder called 'xss' eg: /var/www/html/xss
 
 * Have php installed so you can use php in terminal, then start a local server
 ```
