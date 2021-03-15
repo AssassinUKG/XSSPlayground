@@ -24,7 +24,10 @@ Host
 
 *Tip: Make a new folder called 'xss' eg: /var/www/html/xss*
 
-3. Run the php local server
+3. Run the php local server or xampp
+
+*If you have xampp installed use that instead of the php server.
+
 
 *Have php installed so you can use php in terminal, then start a local server*
 
