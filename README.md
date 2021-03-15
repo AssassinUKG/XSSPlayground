@@ -3,6 +3,14 @@
 A simple place to learn XSS.
 Made for myself to learn and to help others (please do use!)
 
+## Disclaimer
+
+This is a works in progress and will change over time. Learn what you can! 
+
+## Updates
+
+15/03/2021 - Added new layout, reworked xss 1,2,3.
+
 ## Screenshots
 
 ![](/assets/xss.png)
