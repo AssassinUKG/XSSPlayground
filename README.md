@@ -37,5 +37,5 @@ Host xampp
 
 1. Download the index.php file.
 2. Add to your /var/www/html folder or /var/www/html/xss
-3. start xampp server, goto http://127.0.0.1/index.php or http://127.0.0.1/xss/index.php
+3. Start xampp server, goto http://127.0.0.1/index.php or http://127.0.0.1/xss/index.php
 
