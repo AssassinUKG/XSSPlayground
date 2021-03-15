@@ -26,7 +26,7 @@ Host
 
 3. Run the php local server or xampp
 
-*If you have xampp installed use that instead of the php server.
+*If you have xampp installed use that instead of the php server. (htdocs)
 
 
 *Have php installed so you can use php in terminal, then start a local server*
