@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html>
 
+<!--
+
+
+box 2 needs to be tested
+Box, 3 and 4 need to be coded and tested. 
+
+-->
+
+
 <head>
 	<title>XSS Challanges</title>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -80,8 +89,8 @@
 	<h1>XSS Challanges</h1>
 	<table id="exploitTable">
 		<tr>
-			<th>XSS One (basic)</th>
-			<th>XSS Two (Tag encode)</th>
+			<th>XSS One</th>
+			<th>XSS Two</th>
 		</tr>
 		<tr>
 			<!-- ##############################################################################  -->
@@ -90,7 +99,7 @@
 				<br />
 				<div>
 					<form>
-						<textarea name="test1" placeholder="Enter a payload"><?= htmlspecialchars($_GET['test1'], ENT_QUOTES, 'UTF-8') ?></textarea>
+						<textarea name="test1" placeholder="Enter a payload"><?= @htmlspecialchars($_GET['test1'], ENT_QUOTES, 'UTF-8') ?></textarea>
 						<br /><input type="submit" value="Test payload">
 					</form>
 
@@ -98,21 +107,21 @@
 				<div><br />
 					<!-- eg payloads: -->
 					<!-- "><script>alert(1)</script> -->
-					<!-- "><img/src=x onmouseenter="javascript:alert(1)"/> -->
-					<!-- XSS HERE --><?php
-					$res = $_GET['test1'];
-					echo "Result: " . $res; ?>
+					<!-- XSS HERE --><?php 
+										$res = @($_GET['test1']);
+										$res = str_replace("img", "noimg", $res);
+										echo "Result: " . $res; ?>
 					<!-- XSS END -->
 				</div>
 
 				<details>
 					<summary>Hints</summary>
-					<p>None for this one, too easy!</p>
+					<p>Check the source!<!-- "><script>alert(1)</script> --></p>
 				</details>
 				<br />
 			</td>
 			<!-- ##############################################################################  -->
-			<!-- ##############################################################################  -->
+			<!-- ################################### TWO ######################################  -->
 			<td>
 				<br />
 				<div>
@@ -123,9 +132,98 @@
 
 				</div>
 				<div><br />
-					<!-- eg payload: "><script>alert(1)</script> -->
+				
 					<!-- XSS HERE -->
 					<script type="text/javascript">
+					//dirty way to clean url from paramaters on page refresh
+					history.replaceState(null, "", location.href.split("?")[0]);
+	
+	
+					
+
+						function update() {
+							var ele = document.getElementById("test2").value;
+							var data = ele;
+							data = data.replace(/^\n|\n$/g, '');
+							data = data.replace(/<\\\/script>/g, "<\/script> ")
+							var res = document.getElementById("updateme");
+							console.log(data);
+							res.innerHTML = "Results: " + data;
+						}
+					</script>
+					<div><label id="updateme">Results: </label></div>
+					<!-- XSS END -->
+				</div>
+				<details>
+					<summary>Hints</summary>
+					<p>no scripts!</p>
+
+				</details>
+				<br />
+			</td>
+			<!-- ##############################################################################  -->
+		</tr>
+	</table>
+
+	<table id="exploitTable">
+		<!-- table 2 -->
+		<tr>
+			<th>XSS Three</th>
+			<th>XSS Four</th>
+		</tr>
+		<tr>
+			<!-- ################################## THREE ####################################  -->
+			<td>
+
+				<br />
+				<div>
+					<form>
+						<textarea id="test3" placeholder="Enter a payload"></textarea>
+						<br /><input type="button" onclick="myclick()" value="Test payload">
+					</form>
+
+				</div>
+				<div><br />
+					<script>
+						function myclick() {
+							var r = document.getElementById("test3").value;
+							var text = r
+							text = text.replace(/</g, '&lt;').replace(/"/g, '&quot;');
+							text = text.replace("img", "noimg");
+							text = text.replace(/(http:\/\/\S+)/g, '<a href="$1">$1</a>');
+							text = text.replace(/\[\[(\w+)\|(.+?)\]\]/g, '<img alt="$2" src="$1.gif">');
+							text = text.replace(/<\\\/script>/g, '<\/script> ')
+							document.getElementById("p1").innerHTML = "Results: '" + text + "'\n";
+						}
+					
+					</script>
+
+					<p id="p1">Results: </p>
+
+					<!-- XSS END -->
+				</div>
+
+				<details>
+					<summary>Hints</summary>
+					<p>Images have errors too!</p>
+				</details>
+				<br />
+			</td>
+			<!-- ##############################################################################  -->
+			<!-- ################################ FOUR ########################################  -->
+			<td>
+				<br />
+				<div>
+					<form>
+						<textarea id="test4" placeholder="Not Working (coded yet)"></textarea>
+						<br /><input type="button" onclick="" value="Test payload">
+					</form>
+
+				</div>
+				<div><br />
+				
+					<!-- XSS HERE -->
+					<!-- <script type="text/javascript">
 						function escape(s) {
 							var text = s.replace(/</g, '&lt;').replace(/"/g, '&quot;');
 							// URLs
@@ -135,7 +233,7 @@
 							return text;
 						}
 
-						function update() {
+						function update2() {
 							var ele = document.getElementById("test2");
 							var data = ele.value;
 							var res = document.getElementById("updateme");
@@ -143,13 +241,13 @@
 						}
 					</script>
 					<div><label id="updateme">Results: </label></div>
-					<!-- XSS END -->
+					 XSS END 
 				</div>
 				<details>
 					<summary>Hints</summary>
 					<p>A few charaters are encoded</p>
 
-				</details>
+				</details> -->
 				<br />
 			</td>
 			<!-- ##############################################################################  -->
