@@ -69,6 +69,7 @@ Cross-site scripting (XSS) is a web security vulnerability. It that allows an at
 ## Great links (learn)
 [Google Gruyer xss](http://google-gruyere.appspot.com/)
 
+https://portswigger.net/web-security/cross-site-scripting
 
 ## Great links (challanges)
 
