@@ -53,24 +53,24 @@ This is when the exploits come from the current http request being made (reflect
 
 [More Info](https://portswigger.net/web-security/cross-site-scripting/reflected)
   
-  
-  
+    
+    
 **Stored XSS**
 
 When the exploits are stored in the servers database, accessed on page load or content loading on the website. 
 
 [More Info](https://portswigger.net/web-security/cross-site-scripting/stored)
 
- 
- 
+    
+    
 **Dom based XSS**
 
 When the expliot is done on the client side ranter then the server. (change the webpage, inject hidden elements etc)
 
 [More Info](https://portswigger.net/web-security/cross-site-scripting/dom-based)
 
-
-
+    
+    
 ## Great links (learn)
 [Google Gruyer xss](http://google-gruyere.appspot.com/)
 
