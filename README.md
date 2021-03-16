@@ -91,3 +91,11 @@ http://www.sudo.co.il/xss/
 ## Great links (cheatsheets)
 
 [Portswigger Cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
+
+https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting
+
+https://html5sec.org/
+
+https://xss.by/
+
+
