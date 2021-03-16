@@ -72,10 +72,13 @@ Cross-site scripting (XSS) is a web security vulnerability. It that allows an at
 
 ## Great links (challanges)
 
-[Xss game pwnfunction - v.good](https://xss.pwnfunction.com/)
-[xss training](https://xss.challenge.training.hacq.me/)
-[xss game](http://xss-game.appspot.com/)
-[xss sudo](http://www.sudo.co.il/xss/)
+[](https://xss.pwnfunction.com/)
+
+[](https://xss.challenge.training.hacq.me/)
+
+[](http://xss-game.appspot.com/)
+
+[](http://www.sudo.co.il/xss/)
 
 ## Great links (cheatsheets)
 [Portswigger Cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
