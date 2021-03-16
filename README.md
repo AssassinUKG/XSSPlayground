@@ -76,6 +76,7 @@ https://www.veracode.com/security/xss
 
 https://excess-xss.com/
 
+https://hackertarget.com/xss-tutorial/
 
 ## Great links (challanges)
 
