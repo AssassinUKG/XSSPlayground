@@ -53,9 +53,18 @@ This is when the exploits come from the current http request being made (reflect
 
 **Stored XSS**
 
-When the exploits are stored in the servers database, access on page load or content loading on the website. 
+When the exploits are stored in the servers database, accessed on page load or content loading on the website. 
 
 **Dom based XSS**
 
 When the expliot is done on the client side ranter then the server. (change the webpage, inject hidden elements etc)
 
+
+
+## Great links (learn)
+
+
+
+## Great links (challanges)
+
+https://xss.pwnfunction.com/
