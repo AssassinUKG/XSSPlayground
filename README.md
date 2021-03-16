@@ -51,6 +51,8 @@ Cross-site scripting (XSS) is a web security vulnerability. It that allows an at
 
 This is when the exploits come from the current http request being made (reflected in response)
 
+[More Info](https://portswigger.net/web-security/cross-site-scripting/reflected)
+
 **Stored XSS**
 
 When the exploits are stored in the servers database, accessed on page load or content loading on the website. 
@@ -62,9 +64,15 @@ When the expliot is done on the client side ranter then the server. (change the 
 
 
 ## Great links (learn)
-
+http://google-gruyere.appspot.com/
 
 
 ## Great links (challanges)
 
 https://xss.pwnfunction.com/
+https://xss.challenge.training.hacq.me/
+http://xss-game.appspot.com/
+http://www.sudo.co.il/xss/
+
+## Great links (cheatsheets)
+https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
