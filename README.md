@@ -39,3 +39,23 @@ Host xampp
 2. Add to your /var/www/html folder or /var/www/html/xss
 3. Start xampp server, goto http://127.0.0.1/index.php or http://127.0.0.1/xss/index.php
 
+
+# Learn
+## What is XSS?
+
+Cross-site scripting (XSS) is a web security vulnerability. It that allows an attacker to compromise the interactions that users have with a vulnerable application. Allowing for various attack types (steal cookies, make user accounts (auth permitting) etc)
+
+## Types of XSS
+
+Reflected XSS
+
+This is when the exploits come from the current http request being made (reflected in response)
+
+Stored XSS
+
+When the exploits are stored in the servers database, access on page load or content loading on the website. 
+
+Dom based XSS
+
+When the expliot is done on the client side ranter then the server. (change the webpage, inject hidden elements etc)
+
