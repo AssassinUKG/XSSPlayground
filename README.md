@@ -49,16 +49,16 @@ Cross-site scripting (XSS) is a web security vulnerability. It that allows an at
 
 - **Reflected XSS**
 
-This is when the exploits come from the current http request being made (reflected in response)
+-- This is when the exploits come from the current http request being made (reflected in response)
 
-[More Info](https://portswigger.net/web-security/cross-site-scripting/reflected)
+-- [More Info](https://portswigger.net/web-security/cross-site-scripting/reflected)
  
 
 - **Stored XSS**
 
-When the exploits are stored in the servers database, accessed on page load or content loading on the website. 
+-- When the exploits are stored in the servers database, accessed on page load or content loading on the website. 
 
-[More Info](https://portswigger.net/web-security/cross-site-scripting/stored)
+-- [More Info](https://portswigger.net/web-security/cross-site-scripting/stored)
 
 
 - **Dom based XSS**
