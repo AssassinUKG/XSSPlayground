@@ -98,7 +98,7 @@ Cross-site scripting (XSS) is a web security vulnerability. It that allows an at
   <script>
    var url_source = "Hi, " + decodeURIComponent(location.hash.split("#")[1]); // example source inject point
    var divElement = document.createElement("div");
-   divElement.innerHTML = source; // Sink, execution point
+   divElement.innerHTML = url_source; // Sink, execution point
    document.body.appendChild(divElement);
   </script>
  </body>
