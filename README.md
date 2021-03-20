@@ -69,24 +69,24 @@ Cross-site scripting (XSS) is a web security vulnerability. It that allows an at
 
 **Sources** - where XSS payloads are injected to.
 
-document.url
-document.referrer
-location
-location.href
-location.search
-location.hash
-location.pathname
+document.url 
+document.referrer 
+location 
+location.href 
+location.search 
+location.hash 
+location.pathname 
 
 
 **Sinks** - where XSS payloads get executed.
 
-element.innerHTML()
-element.outerHTML()
-eval()
-setTimeout()
-setInterval()
-document.write()
-document.writeLn()
+element.innerHTML() 
+element.outerHTML() 
+eval() 
+setTimeout() 
+setInterval() 
+document.write() 
+document.writeLn() 
 
     
 ## Great links (learn)
