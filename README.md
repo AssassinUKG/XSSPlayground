@@ -64,7 +64,34 @@ Cross-site scripting (XSS) is a web security vulnerability. It that allows an at
 - When the expliot is done on the client side ranter then the server. (change the webpage, inject hidden elements etc)
 - [More Info](https://portswigger.net/web-security/cross-site-scripting/dom-based)
 
+
+## Sources and Sinks (DOM XSS)
+
+** Sources **
+
+Sources- are where XSS payloads are injected to.
+
+document.url
+document.referrer
+location
+location.href
+location.search
+location.hash
+location.pathname
+
+
+** Sinks **
     
+Sinks- are where XSS payloads get executed.
+
+element.innerHTML()
+element.outerHTML()
+eval()
+setTimeout()
+setInterval()
+document.write()
+document.writeLn()
+
     
 ## Great links (learn)
 
