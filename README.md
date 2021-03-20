@@ -67,9 +67,7 @@ Cross-site scripting (XSS) is a web security vulnerability. It that allows an at
 
 ## Sources and Sinks (DOM XSS)
 
-**Sources**
-
-Sources - where XSS payloads are injected to.
+**Sources** - where XSS payloads are injected to.
 
 document.url
 document.referrer
@@ -80,9 +78,7 @@ location.hash
 location.pathname
 
 
-**Sinks**
-    
-Sinks - where XSS payloads get executed.
+**Sinks** - where XSS payloads get executed.
 
 element.innerHTML()
 element.outerHTML()
