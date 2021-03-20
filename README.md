@@ -114,8 +114,9 @@ GET www.targeturl.com#<img src=x onerror"alert('DOM XSS')">
 
 ## jQuery PoC's
 
+```
 $('#div').html('<img alt="<x" title="/><img src=x onerror=alert(1)>">');
-
+```
 
 
     
