@@ -128,6 +128,8 @@ http://xss-game.appspot.com/level3/frame#$('#tabContent').html("\"><img src=x on
 
 [Google Gruyer xss](http://google-gruyere.appspot.com/)
 
+https://info.ninadmathpati.com/resources/web-app-pentest/cross-site-scripting-xss
+
 https://portswigger.net/web-security/cross-site-scripting
 
 https://www.veracode.com/security/xss
